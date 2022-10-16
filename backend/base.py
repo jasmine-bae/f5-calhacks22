@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
+from models import models as model
 
 
 api = Flask(__name__)
@@ -26,4 +27,11 @@ def scrape_linkedin():
     print(profileJSON)
     time.sleep(5)
     driver.quit()
+
+    mission = model.generate_mission(profileJSON['summary'])
+    profileJSON["cohere_desc"] = mission
+
+    gen.json_to_portfolio(profileJSON)
+    gen.zipper()
+
     return {}
