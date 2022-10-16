@@ -1,296 +1,141 @@
 import emoji from "react-easy-emoji";
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
+	name: "Jasmine Bae",
+	title: "Hi all, I'm Jasmine Bae",
 	description:
-		"I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
-	resumeLink:
-		"https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing",
+		"",
 };
 
 export const openSource = {
-	githubUserName: "1hanzla100",
+	githubUserName: "KhanWhale",
 };
 
 export const contact = {};
 
 export const socialLinks = {
 	// url: "https://1hanzla100.github.io/",
-	linkedin: "https://www.linkedin.com/in/1hanzla100/",
-	github: "https://github.com/1hanzla100",
+	linkedin: "",
+	// github: " ",
 	// instagram: "https://www.instagram.com/__hanzla100",
 	// facebook: "https://www.facebook.com/1hanzla100",
 	// twitter: "https://twitter.com/1hanzla100",
 };
 
-export const skillsSection = {
-	title: "What I do",
-	subTitle:
-		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-	data: [
-		{
-			title: "Full Stack Development",
-			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"
-				),
-				emoji("⚡ Building responsive static websites using Next.js"),
-				emoji(
-					"⚡ Building RESTful APIs in Django & Django REST Framework"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "HTML-5",
-					fontAwesomeClassname: "vscode-icons:file-type-html",
-				},
-				{
-					skillName: "CSS-3",
-					fontAwesomeClassname: "vscode-icons:file-type-css",
-				},
-				{
-					skillName: "JavaScript",
-					fontAwesomeClassname: "logos:javascript",
-				},
-				{
-					skillName: "Reactjs",
-					fontAwesomeClassname: "vscode-icons:file-type-reactjs",
-				},
-				{
-					skillName: "Nextjs",
-					fontAwesomeClassname: "vscode-icons:file-type-light-next",
-				},
-				{
-					skillName: "Python",
-					fontAwesomeClassname: "logos:python",
-				},
-				{
-					skillName: "Django",
-					fontAwesomeClassname: "vscode-icons:file-type-django",
-				},
-
-				{
-					skillName: "Redux",
-					fontAwesomeClassname: "logos:redux",
-				},
-				{
-					skillName: "NPM",
-					fontAwesomeClassname: "logos:npm-icon",
-				},
-				{
-					skillName: "Yarn",
-					fontAwesomeClassname: "logos:yarn",
-				},
-			],
-		},
-		{
-			title: "Cloud Infra-Architecture",
-			lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji("⚡ Experience of working on multiple cloud platforms"),
-				emoji(
-					"⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases"
-				),
-				emoji(
-					"⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions"
-				),
-			],
-			softwareSkills: [
-				// ? Check README To get icon details
-				{
-					skillName: "AWS",
-					fontAwesomeClassname: "logos:aws",
-				},
-				{
-					skillName: "Azure",
-					fontAwesomeClassname: "logos:microsoft-azure",
-				},
-				{
-					skillName: "Heroku",
-					fontAwesomeClassname: "logos:heroku-icon",
-				},
-				{
-					skillName: "PostgreSQL",
-					fontAwesomeClassname: "logos:postgresql",
-				},
-				{
-					skillName: "Github",
-					fontAwesomeClassname: "akar-icons:github-fill",
-				},
-				{
-					skillName: "Docker",
-					fontAwesomeClassname: "logos:docker-icon",
-				},
-				{
-					skillName: "Github Actions",
-					fontAwesomeClassname: "logos:github-actions",
-				},
-				{
-					skillName: "Cloudinary",
-					fontAwesomeClassname: "logos:cloudinary",
-				},
-				{
-					skillName: "Nginx",
-					fontAwesomeClassname: "logos:nginx",
-				},
-				{
-					skillName: "Sentry",
-					fontAwesomeClassname: "logos:sentry-icon",
-				},
-			],
-		},
-		{
-			title: "Blockchain",
-			lottieAnimationFile: "/lottie/skills/ethereum.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Experience in developing Smart Contract using Solidity & Ethereum"
-				),
-				emoji(
-					"⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura"
-				),
-				emoji(
-					"⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles"
-				),
-				emoji(
-					"⚡ Developing NFT Smart Contracts using ERC-721 Token Standard"
-				),
-				emoji(
-					"⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "Ethereum",
-					fontAwesomeClassname: "logos:ethereum",
-				},
-				{
-					skillName: "Solidity",
-					fontAwesomeClassname: "logos:solidity",
-				},
-				{
-					skillName: "Web3js",
-					fontAwesomeClassname: "logos:web3js",
-				},
-				{
-					skillName: "Metamask",
-					fontAwesomeClassname: "logos:metamask-icon",
-				},
-				{
-					skillName: "Ganache",
-					fontAwesomeClassname: "logos:ganache-icon",
-				},
-			],
-		},
-	],
-};
-
 export const SkillBars = [
+
 	{
-		Stack: "Frontend/Design", //Insert stack or technology you have experience in
+		Stack: "skillA", //Insert stack or technology you have experience in
 		// progressPercentage: "90", //Insert relative proficiency in percentage
 	},
+
 	{
-		Stack: "Backend",
-		// progressPercentage: "70",
+		Stack: "skillB", //Insert stack or technology you have experience in
+		// progressPercentage: "90", //Insert relative proficiency in percentage
 	},
+
 	{
-		Stack: "Programming",
-		// progressPercentage: "60",
+		Stack: "skillC", //Insert stack or technology you have experience in
+		// progressPercentage: "90", //Insert relative proficiency in percentage
 	},
+
 ];
 
 export const educationInfo = [
+
 	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		grade: "Grade A",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
+		schoolName: "University of California, Berkeley",
+		subHeader: "Bachelor's degree, Electrical Engineering and Computer Sciences + Business",
+		duration: "2019 - 2023",
 	},
+
 ];
 
 export const experience = [
+
 	{
-		role: "Frontend Developer",
-		company: "Duseca Software",
+		role: "Marketing and Communications Assistant",
+		company: "UC Berkeley College of Engineering · Part-time",
 		companylogo: "/img/icons/common/dusecaSoftware.jpg",
-		date: "Apr 2022 – Jun 2022",
-		desc: "I worked as frontend web developer to design web based admin dashboards for mulitple apps using Django, Bootstrap, jQuery, Chart.js and some other libraries.",
+		date: "Aug 2020 - Present · 2 yrs 3 mos",
+		descBullets: ['• Maintaining organizational Twitter, Facebook, Instagram, LinkedIn accounts for Engineering Student Services and Berkeley Engineering'],
 	},
+
 	{
-		role: "API Engineer",
-		company: "Duseca Software",
+		role: "Program Manager Intern",
+		company: "Microsoft · Internship",
 		companylogo: "/img/icons/common/dusecaSoftware.jpg",
-		date: "Jan 2022 – Mar 2022",
-		desc: "I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
+		date: "May 2022 - Aug 2022 · 4 mos",
+		descBullets: ['• Designed software architecture and created an automated intelligent internal chatbot using Azure Cognitive Services to expand and improve security KPI service compliance throughout all Microsoft products• Designed software architecture and created an automated intelligent internal chatbot using Azure Cognitive Services to expand and improve security KPI service compliance throughout all Microsoft products'],
 	},
+
 	{
-		role: "Full Stack Developer",
-		company: "Bleed-AI",
-		companylogo: "/img/icons/common/bleedAI.jpg",
-		date: "Aug 2021 - Oct 2021",
-		desc: "Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.",
+		role: "Head of Investment Research",
+		company: "Alternative Investments Society of Berkeley",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "Mar 2021 - Dec 2021 · 10 mos",
+		descBullets: ['• Focusing on researching, developing, and presenting a comprehensive overview of alternative investments and different asset categories to members'],
 	},
+
 	{
-		role: "Backend Developer",
-		company: "Wapidu",
-		companylogo: "/img/icons/common/wapidu.jpg",
-		date: "Sept 2021",
-		desc: "Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.",
+		role: "Program Manager Intern",
+		company: "Microsoft · Internship",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "May 2021 - Aug 2021 · 4 mos",
+		descBullets: ['• Defined project specifications; developed tools in Azure Data Factory & Azure SQL; presented findings using PowerBI + SharePoint'],
 	},
+
+	{
+		role: "Business Development and Data Analytics Intern",
+		company: "4D Sight · Internship",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "Jun 2020 - Aug 2020 · 3 mos",
+		descBullets: ['• Enabling a new paradigm of native and context aware monetization for live videos• Analyzed sports/esports industry market trends and competitors to form revenue projections and new product analytics capabilities• Expanded reach and business partnerships to target the sports broadcasting market and online safety organizations• Drafted and published 4 Medium articles commenting on big data disrupting the sports industry and on current advertising techniques both during and before the COVID-19 pandemic• Revitalized pitch decks and developed call decks for client distribution• Enabling a new paradigm of native and context aware monetization for live videos', '• Analyzed sports/esports industry market trends and competitors to form revenue projections and new product analytics capabilities', '• Expanded reach and business partnerships to target the sports broadcasting market and online safety organizations', '• Drafted and published 4 Medium articles commenting on big data disrupting the sports industry and on current advertising techniques both during and before the COVID-19 pandemic', '• Revitalized pitch decks and developed call decks for client distribution'],
+	},
+
+	{
+		role: "Events Assistant",
+		company: "UC Berkeley College of Engineering · Part-time",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "Aug 2019 - May 2020 · 10 mos",
+		descBullets: ['• Planning, preparing, and facilitating College of Engineering events with the College Relations Department• Creating digital marketing materials and graphic designs for Minner Lecture series, View from the Top Lecture series, Engineering Homecoming, and other events• Assisting preparations and marketing for lecture series and faculty discussions• Planning, preparing, and facilitating College of Engineering events with the College Relations Department', '• Creating digital marketing materials and graphic designs for Minner Lecture series, View from the Top Lecture series, Engineering Homecoming, and other events', '• Assisting preparations and marketing for lecture series and faculty discussions'],
+	},
+
+	{
+		role: "Intern",
+		company: "Naval Surface Warfare Center Corona Division · Internship",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "Jun 2019 - Aug 2019 · 3 mos",
+		descBullets: ['• Internship under Quality Management Department at the Measurement Science Laboratory• Established Preventive Maintenance program, procedures, and logsheets for all equipment in the Navy Gage Facilties Laboratory• Responsible for creating Work Instructions for document control of procedures and CMM pseudocode/software usage•  Performed internal audits for Gage Laboratory• Created an Operation Manual for Gas Cylinders up to Navy and ISO Standards• Calibrated and repaired various gages for the Standards Laboratory for use in Navy and Marine Missions• Internship under Quality Management Department at the Measurement Science Laboratory', '• Established Preventive Maintenance program, procedures, and logsheets for all equipment in the Navy Gage Facilties Laboratory', '• Responsible for creating Work Instructions for document control of procedures and CMM pseudocode/software usage', '•  Performed internal audits for Gage Laboratory', '• Created an Operation Manual for Gas Cylinders up to Navy and ISO Standards', '• Calibrated and repaired various gages for the Standards Laboratory for use in Navy and Marine Missions'],
+	},
+
+	{
+		role: "Intern",
+		company: "Naval Surface Warfare Center Corona Division · Internship",
+		companylogo: "/img/icons/common/dusecaSoftware.jpg",
+		date: "Jun 2018 - Aug 2018 · 3 mos",
+		descBullets: ['• Internship under the Quality Management Head of the Measurement Science Laboratory• Created an operation manual for the various Materials Handling Equipment on base• Calibration of various gages used for Navy and Marine missions up to ISO 17025:2015 standards• Created 3D-models needed at the optical/3D-printing laboratory.• Internship under the Quality Management Head of the Measurement Science Laboratory', '• Created an operation manual for the various Materials Handling Equipment on base', '• Calibration of various gages used for Navy and Marine missions up to ISO 17025:2015 standards', '• Created 3D-models needed at the optical/3D-printing laboratory.'],
+	},
+
 ];
 
 export const projects = [
+
 	{
-		name: "developer-portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
+		name: "['Gitlet']",
+		descBullets: ['* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing', '* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories '],
 	},
+
 	{
-		name: "AtlasMart",
-		desc: "With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.",
-		github: "https://github.com/1hanzla100/Django-React-Marketplace",
+		name: "['Enigma Machine Simulator']",
+		descBullets: [],
 	},
+
 	{
-		name: "Technota (Forum)",
-		desc: "Get hands-on experience in technical skills with Technota",
-		github: "https://github.com/1hanzla100/django-react-forum",
+		name: "['Scheme Programming Language Interpreter']",
+		descBullets: ['* Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. * Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python', '* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. '],
 	},
-	{
-		name: "Shopaza (Ecommerce)",
-		desc: "Now your reach to all your favorite entertainment and luxury items is just one touch apart",
-		github: "https://github.com/1hanzla100/Django-ecommerce",
-	},
-	{
-		name: "developer-portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
-	},
-	{
-		name: "developer-portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
-	},
-	{
-		name: "developer-portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
-	},
+
 ];
 
 export const feedbacks = [
