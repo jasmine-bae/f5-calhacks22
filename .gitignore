@@ -18,3 +18,5 @@ developer-portfolio/.env.development.local
 developer-portfolio/.env.test.local
 developer-portfolio/.env.production.local
 developer-portfolio.vercel
+backend/__pycache__
+backend/env

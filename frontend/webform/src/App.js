@@ -1,12 +1,39 @@
 import { Form } from "@quillforms/renderer-core";
+import { useState } from 'react'
 import "@quillforms/renderer-core/build-style/style.css";
+import axios from "axios"
 import { registerCoreBlocks } from "@quillforms/react-renderer-utils";
 import "./styles.css";
 
 registerCoreBlocks();
 const App = () => {
+  const [profileData, setProfileData] = useState(null)
+
+  function getData() {
+    axios({
+      method: "GET",
+      url:"/profile",
+    })
+    .then((response) => {
+      const res =response.data
+      setProfileData(({
+        profile_name: res.name,
+        about_me: res.about}))
+    }).catch((error) => {
+      if (error.response) {
+        console.log(error.response)
+        console.log(error.response.status)
+        console.log(error.response.headers)
+        }
+    })}
+  
   return (
     <div style={{ width: "100%", height: "100vh" }}>
+      <p>To get your profile details: </p><button onClick={getData}>Click me</button>
+        {profileData && <div>
+              <p>Profile name: {profileData.profile_name}</p>
+              <p>About me: {profileData.about_me}</p>
+            </div>}
       <Form
         formId="1"
         formObj={{

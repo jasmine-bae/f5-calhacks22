@@ -2,12 +2,14 @@
   "name": "webform",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@quillforms/react-renderer-utils": "^1.2.5",
     "@quillforms/renderer-core": "^1.10.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.1.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.1",
@@ -15,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-backend": "cd ../../backend && env/bin/flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
