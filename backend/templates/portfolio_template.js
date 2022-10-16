@@ -8,7 +8,7 @@ export const greetings = {
 };
 
 export const openSource = {
-	githubUserName: "KhanWhale",
+	githubUserName: "{{ github }}",
 };
 
 export const contact = {};
@@ -16,18 +16,18 @@ export const contact = {};
 export const socialLinks = {
 	// url: "https://1hanzla100.github.io/",
 	linkedin: "{{ linkedin_url }}",
-	// github: " {{ github_url }}",
+	github: "https://github.com/{{github}}",
 	// instagram: "https://www.instagram.com/__hanzla100",
 	// facebook: "https://www.facebook.com/1hanzla100",
 	// twitter: "https://twitter.com/1hanzla100",
 };
 
 export const SkillBars = [
-	{% for skill in skills %}
+	{% for skill in skill_prof %}
 {
-	Stack: "{{ skill }}", //Insert stack or technology you have experience in
-		// progressPercentage: "90", //Insert relative proficiency in percentage
-	},
+	Stack: "{{ skill.name }}", //Insert stack or technology you have experience in
+		progressPercentage: {{ skill.proficiency }}, //Insert relative proficiency in percentage
+},
 {% endfor %}
 ];
 
@@ -77,10 +77,10 @@ export const feedbacks = [
 
 // See object prototype on SEO.jsx page
 export const seoData = {
-	title: "Hanzla Tauqeer",
+	title: "{{ name }}",
 	description:
 		"A passionate Full Stack Web Developer and Blockchain Developer.",
-	author: "Hanzla Tauqeer",
+	author: "{{ name }}",
 	image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
 	url: "https://developer-portfolio-1hanzla100.vercel.app",
 	keywords: [

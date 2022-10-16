@@ -240,7 +240,7 @@ def returnProfileInfo(employeeLink):
             elif ("score:" not in alltext[16].lower().split(' ') and "proficiency" not in alltext[16].lower().split(' ') and len(alltext) > 40 and sawScore == False):
                 associated = alltext[40][:len(alltext[40])//2]
                 description = list(filter(None, alltext[54:][:len(alltext[54:])//2]))
-                name = alltext[12][:len(alltext[12])//2],
+                name = alltext[12][:len(alltext[12])//2][0],
                 date = alltext[16][:len(alltext[16])//2]
                 profile.append(('project',name,  date,associated, description))
                 project = {

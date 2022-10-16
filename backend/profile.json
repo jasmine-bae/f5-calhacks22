@@ -1,1 +1,164 @@
-{"linkedin_url": "https://www.linkedin.com/in/ashwin-ganesh10//details/experience/", "name": "Ashwin G.", "title": "UC Berkeley EECS MS '23 | Amazon SDE Intern | Deep Learning Researcher", "summary": "I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.\n\n \n          \u2026see more", "jobs": [{"title": "Undergraduate Student Researcher", "company": "Berkeley Artificial Intelligence Research", "duration": "Sep 2020 - Present \u00b7 2 yrs 2 mos", "location": "Berkeley, California, United States", "description": ["* Adapt traditional neural network training algorithms to novel implicit networks and incorporate a sensitivity matrix regularization penalty to improve model accuracy* Analyzed the robustness of various neural networks represented in an implicit model using my custom-made diagnostic tool (Python/PyTorch) to gain insight into preventing adversarial attacks* Adapt traditional neural network training algorithms to novel implicit networks and incorporate a sensitivity matrix regularization penalty to improve model accuracy", "* Analyzed the robustness of various neural networks represented in an implicit model using my custom-made diagnostic tool (Python/PyTorch) to gain insight into preventing adversarial attacks"]}, {"title": "Software Development Engineer Intern", "company": "Amazon \u00b7 Internship", "duration": "May 2022 - Aug 2022 \u00b7 4 mos", "location": "San Francisco Bay Area", "description": []}, {"title": "", "company": "1 yr 9 mos", "duration": "", "location": "", "description": []}, {"title": "", "company": "1 yr 9 mos", "duration": "", "location": "", "description": []}, {"title": "Software Engineer Intern", "company": "Medtronic \u00b7 Internship", "duration": "Jun 2021 - Aug 2021 \u00b7 3 mos", "location": "North Haven, Connecticut, United States", "description": ["* Adapted breast cancer detection ML model to detect and localize up to 10 abdominal structures in ultrasound images with 95% accuracy* Developed program that creates 3D models (in < 5 sec.) of critical structures present across a series of ultrasound images to make intraoperative visualization more intuitive for surgeons* Added custom commands to voice control unit and created GUI to demonstrate voice control of 3D reconstruction program* Adapted breast cancer detection ML model to detect and localize up to 10 abdominal structures in ultrasound images with 95% accuracy", "* Developed program that creates 3D models (in < 5 sec.) of critical structures present across a series of ultrasound images to make intraoperative visualization more intuitive for surgeons", "* Added custom commands to voice control unit and created GUI to demonstrate voice control of 3D reconstruction program"]}, {"title": "EECS 16A Academic Student Employee (ASE)", "company": "UC Berkeley Electrical Engineering & Computer Sciences (EECS) \u00b7 Part-time", "duration": "Jan 2020 - May 2020 \u00b7 5 mos", "location": "Berkeley, CA", "description": ["* Graded homework and provided feedback to 600 students on problems related to Linear Algebra, Circuit Analysis, and Signal Processing Algorithms * Graded homework and provided feedback to 600 students on problems related to Linear Algebra, Circuit Analysis, and Signal Processing Algorithms "]}, {"title": "Autonomous Navigation Software Developer ", "company": "UAVs@Berkeley", "duration": "Sep 2019 - May 2020 \u00b7 9 mos", "location": "Berkeley, California, United States", "description": ["* Designed and implemented a pathfinding and dynamic object avoidance algorithm for a fixed-wing drone using Python, A* search algorithm, NumPy linear algebra library, and multivariable calculus knowledge* Analyzed several research papers highlighting mathematically dense algorithms and incorporated the most viable aspects of each into our algorithm* Generated granular waypoints surrounding virtual cylindrical obstacles and used the A* search algorithm on these waypoints to provide the drone with the most optimal path to fly* Designed and implemented a pathfinding and dynamic object avoidance algorithm for a fixed-wing drone using Python, A* search algorithm, NumPy linear algebra library, and multivariable calculus knowledge", "* Analyzed several research papers highlighting mathematically dense algorithms and incorporated the most viable aspects of each into our algorithm", "* Generated granular waypoints surrounding virtual cylindrical obstacles and used the A* search algorithm on these waypoints to provide the drone with the most optimal path to fly"]}, {"title": "Instructor", "company": "Mathnasium - The Math Learning Center \u00b7 Part-time", "duration": "Mar 2018 - Jan 2020 \u00b7 1 yr 11 mos", "location": "Palm Harbor, FL", "description": ["* Helped K-12 students on their math homework while also strengthening their foundational math skills by guiding them through the Mathnasium curriculum* Ensured learning math is as enjoyable as possible by integrating engaging math games into the learning process and tailoring my instruction style to each individual student* Seasonal employee after starting college* Helped K-12 students on their math homework while also strengthening their foundational math skills by guiding them through the Mathnasium curriculum", "* Ensured learning math is as enjoyable as possible by integrating engaging math games into the learning process and tailoring my instruction style to each individual student", "* Seasonal employee after starting college"]}], "education": [{"school": "University of California, Berkeley", "degree": "Master of Science - MS, Electrical Engineering and Computer Sciences", "duration": "Aug 2022 - May 2023"}, {"school": "University of California, Berkeley", "degree": "Bachelor of Science - BS, Electrical Engineering and Computer Sciences", "duration": "2019 - 2022"}], "certificates": [{"title": "Adobe Certified Associate in Web Communication Using Adobe Dreamweaver CS6", "name": "Adobe", "issue": "Issued Dec 2017 \u00b7 No Expiration Date", "credid": "Credential ID GayB-4TA5"}, {"title": "MTA: Security Fundamentals - Certified 2016", "name": "Microsoft", "issue": "Issued Dec 2016 \u00b7 No Expiration Date", "credid": "Credential ID sadP-XLRJ"}, {"title": "Microsoft Office Specialist Excel 2013", "name": "Microsoft", "issue": "Issued Feb 2016 \u00b7 No Expiration Date", "credid": "Credential ID MqFq-sFwd"}], "publications": [], "skills": ["Python (Programming Language)", "PyTorch/TensorFlow", "Deep Learning"], "awards": [{"name": "Fidelity Information Systems $3000 Scholarship Winner", "issue": "Issued by Fidelity Information Systems \u00b7 Jun 2020", "description": ["* Awarded to children of FIS employees based on academic merit, extracurricular contributions, and an essay about Financial Technology* Awarded to children of FIS employees based on academic merit, extracurricular contributions, and an essay about Financial Technology"]}, {"name": "National AP Scholar", "issue": "Issued by CollegeBoard \u00b7 Jul 2019", "description": ["Associated with East Lake High SchoolAssociated with East Lake High School", " "]}, {"name": "National Merit $2500 Scholarship Winner", "issue": "Issued by National Merit Scholarship Corporation \u00b7 May 2019", "description": ["Associated with East Lake High SchoolAssociated with East Lake High School", " "]}], "projects": [{"name": ["Gitlet"], "date": "Apr 2020 - May 2020", "associated": "Associated with University of California, Berkeley", "description": ["* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing", "* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories "]}, {"name": ["Enigma Machine Simulator"], "date": "Feb 2020 - Mar 2020", "associated": "", "description": []}, {"name": ["Scheme Programming Language Interpreter"], "date": "Nov 2019 - Nov 2019", "associated": "Associated with University of California, Berkeley", "description": ["* Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. * Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python", "* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. "]}]}
+{
+    "linkedin_url": "https://www.linkedin.com/in/ashwin-ganesh10//details/experience/",
+    "name": "Ashwin G.",
+    "title": "UC Berkeley EECS MS '23 | Amazon SDE Intern | Deep Learning Researcher",
+    "summary": "I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.\n\n \n          \u2026see more",
+    "cohere_desc": "The author has experience with software development through internships and deep-learning research.",
+    "github": "aganesh10",
+    "jobs": [
+        {
+            "title": "Undergraduate Student Researcher",
+            "company": "Berkeley Artificial Intelligence Research",
+            "duration": "Sep 2020 - Present \u00b7 2 yrs 2 mos",
+            "location": "Berkeley, California, United States",
+            "description": [
+                "* Adapt traditional neural network training algorithms to novel implicit networks and incorporate a sensitivity matrix regularization penalty to improve model accuracy* Analyzed the robustness of various neural networks represented in an implicit model using my custom-made diagnostic tool (Python/PyTorch) to gain insight into preventing adversarial attacks* Adapt traditional neural network training algorithms to novel implicit networks and incorporate a sensitivity matrix regularization penalty to improve model accuracy",
+                "* Analyzed the robustness of various neural networks represented in an implicit model using my custom-made diagnostic tool (Python/PyTorch) to gain insight into preventing adversarial attacks"
+            ]
+        },
+        {
+            "title": "Software Development Engineer Intern",
+            "company": "Amazon \u00b7 Internship",
+            "duration": "May 2022 - Aug 2022 \u00b7 4 mos",
+            "location": "San Francisco Bay Area",
+            "description": []
+        },
+        {
+            "title": "Software Engineer Intern",
+            "company": "Medtronic \u00b7 Internship",
+            "duration": "Jun 2021 - Aug 2021 \u00b7 3 mos",
+            "location": "North Haven, Connecticut, United States",
+            "description": [
+                "* Adapted breast cancer detection ML model to detect and localize up to 10 abdominal structures in ultrasound images with 95% accuracy* Developed program that creates 3D models (in < 5 sec.) of critical structures present across a series of ultrasound images to make intraoperative visualization more intuitive for surgeons* Added custom commands to voice control unit and created GUI to demonstrate voice control of 3D reconstruction program* Adapted breast cancer detection ML model to detect and localize up to 10 abdominal structures in ultrasound images with 95% accuracy",
+                "* Developed program that creates 3D models (in < 5 sec.) of critical structures present across a series of ultrasound images to make intraoperative visualization more intuitive for surgeons",
+                "* Added custom commands to voice control unit and created GUI to demonstrate voice control of 3D reconstruction program"
+            ]
+        },
+        {
+            "title": "EECS 16A Academic Student Employee (ASE)",
+            "company": "UC Berkeley Electrical Engineering & Computer Sciences (EECS) \u00b7 Part-time",
+            "duration": "Jan 2020 - May 2020 \u00b7 5 mos",
+            "location": "Berkeley, CA",
+            "description": [
+                "* Graded homework and provided feedback to 600 students on problems related to Linear Algebra, Circuit Analysis, and Signal Processing Algorithms * Graded homework and provided feedback to 600 students on problems related to Linear Algebra, Circuit Analysis, and Signal Processing Algorithms "
+            ]
+        },
+        {
+            "title": "Autonomous Navigation Software Developer ",
+            "company": "UAVs@Berkeley",
+            "duration": "Sep 2019 - May 2020 \u00b7 9 mos",
+            "location": "Berkeley, California, United States",
+            "description": [
+                "* Designed and implemented a pathfinding and dynamic object avoidance algorithm for a fixed-wing drone using Python, A* search algorithm, NumPy linear algebra library, and multivariable calculus knowledge* Analyzed several research papers highlighting mathematically dense algorithms and incorporated the most viable aspects of each into our algorithm* Generated granular waypoints surrounding virtual cylindrical obstacles and used the A* search algorithm on these waypoints to provide the drone with the most optimal path to fly* Designed and implemented a pathfinding and dynamic object avoidance algorithm for a fixed-wing drone using Python, A* search algorithm, NumPy linear algebra library, and multivariable calculus knowledge",
+                "* Analyzed several research papers highlighting mathematically dense algorithms and incorporated the most viable aspects of each into our algorithm",
+                "* Generated granular waypoints surrounding virtual cylindrical obstacles and used the A* search algorithm on these waypoints to provide the drone with the most optimal path to fly"
+            ]
+        },
+        {
+            "title": "Instructor",
+            "company": "Mathnasium - The Math Learning Center \u00b7 Part-time",
+            "duration": "Mar 2018 - Jan 2020 \u00b7 1 yr 11 mos",
+            "location": "Palm Harbor, FL",
+            "description": [
+                "* Helped K-12 students on their math homework while also strengthening their foundational math skills by guiding them through the Mathnasium curriculum* Ensured learning math is as enjoyable as possible by integrating engaging math games into the learning process and tailoring my instruction style to each individual student* Seasonal employee after starting college* Helped K-12 students on their math homework while also strengthening their foundational math skills by guiding them through the Mathnasium curriculum",
+                "* Ensured learning math is as enjoyable as possible by integrating engaging math games into the learning process and tailoring my instruction style to each individual student",
+                "* Seasonal employee after starting college"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school": "University of California, Berkeley",
+            "degree": "Master of Science - MS, Electrical Engineering and Computer Sciences",
+            "duration": "Aug 2022 - May 2023"
+        },
+        {
+            "school": "University of California, Berkeley",
+            "degree": "Bachelor of Science - BS, Electrical Engineering and Computer Sciences",
+            "duration": "2019 - 2022"
+        }
+    ],
+    "certificates": [
+        {
+            "title": "Adobe Certified Associate in Web Communication Using Adobe Dreamweaver CS6",
+            "name": "Adobe",
+            "issue": "Issued Dec 2017 \u00b7 No Expiration Date",
+            "credid": "Credential ID GayB-4TA5"
+        },
+        {
+            "title": "MTA: Security Fundamentals - Certified 2016",
+            "name": "Microsoft",
+            "issue": "Issued Dec 2016 \u00b7 No Expiration Date",
+            "credid": "Credential ID sadP-XLRJ"
+        },
+        {
+            "title": "Microsoft Office Specialist Excel 2013",
+            "name": "Microsoft",
+            "issue": "Issued Feb 2016 \u00b7 No Expiration Date",
+            "credid": "Credential ID MqFq-sFwd"
+        }
+    ],
+    "publications": [],
+    "skills": [
+        "Python (Programming Language)",
+        "PyTorch/TensorFlow",
+        "Deep Learning"
+    ],
+    "awards": [
+        {
+            "name": "Fidelity Information Systems $3000 Scholarship Winner",
+            "issue": "Issued by Fidelity Information Systems \u00b7 Jun 2020",
+            "description": [
+                "* Awarded to children of FIS employees based on academic merit, extracurricular contributions, and an essay about Financial Technology* Awarded to children of FIS employees based on academic merit, extracurricular contributions, and an essay about Financial Technology"
+            ]
+        },
+        {
+            "name": "National AP Scholar",
+            "issue": "Issued by CollegeBoard \u00b7 Jul 2019",
+            "description": [
+                "Associated with East Lake High SchoolAssociated with East Lake High School",
+                " "
+            ]
+        },
+        {
+            "name": "National Merit $2500 Scholarship Winner",
+            "issue": "Issued by National Merit Scholarship Corporation \u00b7 May 2019",
+            "description": [
+                "Associated with East Lake High SchoolAssociated with East Lake High School",
+                " "
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": [
+                "Gitlet"
+            ],
+            "date": "Apr 2020 - May 2020",
+            "associated": "Associated with University of California, Berkeley",
+            "description": [
+                "* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories* Designed and implemented a version-control system from scratch, leveraging knowledge of Java data structures, object serialization, and file reading/writing",
+                "* Incorporated features such as saving of file directories, restoring from previous versions, maintaining and merging differing change histories, and collaboration among multiple remote Gitlet repositories "
+            ]
+        },
+        {
+            "name": [
+                "Enigma Machine Simulator"
+            ],
+            "date": "Feb 2020 - Mar 2020",
+            "associated": "",
+            "description": []
+        },
+        {
+            "name": [
+                "Scheme Programming Language Interpreter"
+            ],
+            "date": "Nov 2019 - Nov 2019",
+            "associated": "Associated with University of California, Berkeley",
+            "description": [
+                "* Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. * Created a fully functional and tail call optimized interpreter for Scheme, a dialect of the function-oriented programming language Lisp, using Python",
+                "* Implemented large portions of the Read-Eval-Print Loop that parses Scheme expressions into a Python linked list representation, evaluates these expressions, and applies user-defined functions, built-in functions, and special forms. "
+            ]
+        }
+    ]
+}
