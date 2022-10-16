@@ -1,6 +1,8 @@
 # Take in a JSON Payload from the Scraper, Output a portfolio.js
 import json
+import os
 import random
+import shutil
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 def process_request(request, response):
@@ -26,5 +28,17 @@ def json_to_portfolio(in_json):
         message.write(content)
         print(f"... wrote {filename}")
 
+def zipper():
+    #remove .next, node_modules
+    nxt_path = '../developer-portfolio/.next'
+    node_path = '../developer-portfolio/node_modules'
+
+    if os.path.exists(nxt_path):
+        shutil.rmtree(nxt_path)
+    if os.path.exists(node_path):
+        shutil.rmtree(node_path)
+    shutil.make_archive('your_site', 'zip', '../developer-portfolio')
+
 if __name__ == '__main__':
     json_to_portfolio(None)
+    zipper()
