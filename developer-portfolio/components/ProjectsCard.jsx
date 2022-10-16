@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, CardBody, Col, Button } from "reactstrap";
+import { Card, CardBody, CardText, Col, Button } from "reactstrap";
 
 import { Fade } from "react-reveal";
 
@@ -46,6 +46,18 @@ const ProjectsCard = ({ data }) => {
 								) : null}
 							</div>
 						</div>
+						<CardText
+							tag="div"
+							className="description my-3 text-left"
+						>
+							<ul>
+								{data.descBullets
+									? data.descBullets.map((desc) => {
+										return <li key={desc}>{desc}</li>;
+									})
+									: null}
+							</ul>
+						</CardText>
 					</CardBody>
 				</Card>
 			</Fade>
