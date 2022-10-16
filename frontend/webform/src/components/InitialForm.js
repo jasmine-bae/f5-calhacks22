@@ -8,47 +8,22 @@ import "../styles.css";
 
 registerCoreBlocks();
 const InitialForm = () => {
-  const [profileData, setProfileData] = useState(null)
 
-  const fieldAnswer = useFieldAnswer("bv91em9123");
-
-  function getData() {
-    axios({
-      method: "GET",
-      url: "/profile",
-    })
-    .then((response) => {
-      const res = response.data
-      setProfileData(({
-        profile_name: res.name,
-        about_me: res.about}))
-    }).catch((error) => {
-      if (error.response) {
-        console.log(error.response)
-        console.log(error.response.status)
-        console.log(error.response.headers)
-        }
-    })}
-
-  function sendURL(URL) {
+  function sendURL(linkedin_URL, github_handle) {
     console.log(URL);
     axios({
       method: "POST",
       url: "/scrape",
       headers: {},
       data: {
-        url: URL
+        linkedin_url: linkedin_URL,
+        github_handle: github_handle
       }
     });
   }
         
   return (
     <div style={{ width: "100%", height: "100vh" }}>
-      <p>To get your profile details: </p><button onClick={getData}>Click me</button>
-        {profileData && <div>
-              <p>Profile name: {profileData.profile_name}</p>
-              <p>About me: {profileData.about_me}</p>
-            </div>}
       <Form
         formId="1"
         formObj={{
@@ -94,6 +69,14 @@ const InitialForm = () => {
                 multiple: true,
                 label: "Please insert your LinkedIn profile url!"
               }
+            },
+            {
+              name: "short-text",
+              id: "abcd",
+              attributes: {
+                required: true,
+                label: "Please enter your Github handle (no @)"
+              }
             }
           ],
           settings: {
@@ -123,7 +106,7 @@ const InitialForm = () => {
             setIsSubmitting(false);
             completeForm();
           }, 500);
-          sendURL(data.answers['abasd'].value);
+          sendURL(data.answers['abasd'].value, data.answers['abcd'].value);
         }}
       />
     </div>

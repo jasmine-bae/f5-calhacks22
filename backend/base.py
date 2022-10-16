@@ -1,12 +1,29 @@
-from flask import Flask
+from flask import Flask, request
+import js_generator as gen
+import linkedin_employee_scraper as scraper
+import os
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+import time
+
 
 api = Flask(__name__)
 
-@api.route('/profile')
-def my_profile():
-    response_body = {
-        "name": "Nagato",
-        "about" :"Hello! I'm a full stack developer that loves python and javascript"
-    }
+homedir = os.path.expanduser("~")
+path = Service(f"{homedir}/Docs/CalHacks22/f5-calhacks22/backend/linux_chromedriver")
 
-    return response_body
+options = Options()
+options.add_argument('--headless')
+driver = webdriver.Chrome(service=path, options=options)
+
+@api.route('/scrape', methods=['POST'])
+def scrape_linkedin():
+    linkedin = request.json['linkedin_url']
+    github = request.json['github_handle']
+    scraper.login()
+    info, profileJSON = scraper.returnProfileInfo(linkedin)
+    print(profileJSON)
+    time.sleep(5)
+    driver.quit()
+    return {}

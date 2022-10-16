@@ -1,21 +1,24 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import time
-import pandas as pd
 import json
 import sys
+import os
 
-path = "/Users/jasminebae/Documents/calhacks2022/linkedin-web-scraping/chromedriver"
+
+homedir = os.path.expanduser("~")
+path = Service(f"{homedir}/Docs/CalHacks22/f5-calhacks22/backend/linux_chromedriver")
 # download the chromedriver.exe from https://chromedriver.storage.googleapis.com/index.html?path=106.0.5249.21/
 
 
-# options = Options()
-# options.add_argument('--headless')
+options = Options()
+options.add_argument('--headless')
 # options.add_argument('--disable-gpu')
 # driver = webdriver.Chrome(path, options = options)
-driver = webdriver.Chrome(path)
+driver = webdriver.Chrome(service=path, options=options)
 
 # Login
 def login():
