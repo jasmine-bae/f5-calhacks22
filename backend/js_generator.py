@@ -12,7 +12,7 @@ def json_to_portfolio(in_json):
         print('read')
     environment = Environment(loader=FileSystemLoader("templates/"), autoescape=select_autoescape(enabled_extensions=('js')))
     template = environment.get_template("portfolio_template.js")
-    filename = f"templates/portfolio_{data['name'].lower().replace(' ', '_')}.js"
+    filename = f"../developer-portfolio/portfolio.js"
     content = template.render(
         data,
     )
