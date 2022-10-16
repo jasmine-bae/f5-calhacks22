@@ -1,0 +1,64 @@
+import cohere
+import requests
+import base64
+
+#Linkedln Summary -> Shorter Mission Statement
+# input = "Hey, I\'m Alicia! My nephew thinks I\'m super cool and fight dinosaurs for a living, but I\'m actually a student at UC Berkeley and am a lot better at things like full stack development + machine learning (and a little bit of infra now!). I love learning new engineering topics and am super interested in things like humane technology and finance. At school, I\'m currently the president of a machine learning club and hope to create a more vibrant and welcoming community for other students, as well as provide new educational oppurtunities!"
+def generate_mission(new_summary):
+    new_summary_full = "--Passage: " + new_summary + "TLDR:"
+
+    old_info = 'Passage: I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.TLDR: The author has experience with software development through internships and deep-learning research.--Passage: Senior Regents\' & Chancellor\'s Scholar at UC Berkeley studying Materials Science, EECS, and Energy Engineering. I am interested in solving materials problems in the energy space via the use of computer science. I have a proven track record in all of these functionalities, with internship experience in EE, CS, Materials Science, and Chemistry, in fields spanning aerospace, defense, automotive, and national security. Beyond the workplace, I am passionate about mentorship, teaching, and community building, having served in a wide variety of instructional, community-focused roles throughout my career.TLDR: The author has a proven track record in software development, and beyond the workplace, the author is passionate about teaching and community building.--Passage: I am a fourth-year student studying Electrical Engineering and Computer Science + Business at UC Berkeley\'s Management, Entrepreneurship, and Technology (M.E.T.) Program. Currently, I support ISAACS (Immersive Semi-Autonomous Aerial Command System) as an undergraduate researcher at the Vive Center for Enhanced Reality and Lawrence Berkeley National Laboratory. During the semester, I also support Berkeley Engineering\'s College Relations Department as a Student Assistant. Feel free to contact me anytime at jasmine.bae@berkeley.edu.TLDR: The author has supported research projects with immersive semi-autonomous aerial command systems as an undergraduate researcher at Vive Center for Enhanced Reality Lawrence Berkeley National Laboratory and as a student assistant with Berkeley Engineering\'s College Relations Department. --Passage: Student at University of California, Berkeley pursuing a double major in Computer Science and Applied Mathematics. Interested in challenging opportunities in software development and mathematical applications. TLDR: The author is pursuing a double major in Computer Science and Applied Mathematics at University of California, Berkeley. The author is interested in challenging opportunities in software development and mathematical applications. --Passage: My name is Sarthak Madan and I am a senior at UC Berkeley studying Electrical Engineering and Computer Science. I have been programming for the past 7 years and am proficient in C++, Python and Java. I have enjoyed working on many personal projects in the past which can be viewed on my Github: https://github.com/sarthak171. I also enjoy sharing my passion with younger students through my own non-profit organization San Diego Code, where I teach K-12 students basic programming fundamentals. I am currently looking for= a challenging software internship for Summer 2022. TLDR: Sarthak Madan has been programming for the past 7 years and is proficient in C++, Python, Java. The author also enjoys sharing their passion with younger students through San Diego Code non-profit organization.--Passage: My name is Aniruddha Alawani and I am a third year student at UC Berkeley studying Electrical Engineering and Computer Science. I am an avid programmer with over 9 years of experience in Java, Python, C++, Javascript, and other programming languages. I enjoy doing Computer Vision research at UC Berkeley as well as working on my own projects. Some of my work can be seen on my Github at https://github.com/Aalawani686. I am actively looking for internship opportunities for Summer 2022. If you are looking for a passionate, knowledgeable coder for your team, feel free to contact me at aalawani@berkeley.edu.TLDR: Aniruddha Alawani has over 9 years of experience writing programs in Java, Python, C++, and Javascript. He also enjoys working on Comptuer Vision research and working on personal projects.'
+
+    co = cohere.Client('LfisDp2gB4OBLOMdrO8rgNkBv6JBFwOzfoClNUti')
+    response = co.generate(
+    model='gptd-instruct-tft',
+    prompt=old_info + new_summary_full,
+    max_tokens=60,
+    temperature=1,
+    k=3,
+    p=1,
+    frequency_penalty=0.3,
+    presence_penalty=0,
+    stop_sequences=["--"],
+    return_likelihoods='NONE')
+
+    mission_statement = response.generations[0].text.replace("--", "")
+    return mission_statement
+
+# Linkedln Summary -> Keywords for Scrolling Carousel
+# Example: https://ddderek.com/
+#input = "Hiring software engineers and machine learning engineers at multiple levels!\n\nEngineering leader with unique ability to bridge the gap between machine learning, production software, people management, and customer-centric product development.\n\nI have worked in a broad range of settings - academic and industry research labs, two Seattle startups, two FAANG companies, and one high-growth mid-size company.\n\nCurrently building a world-class team of software engineers to invent the future of retail - please reach out!\n\n"
+def generate_keywords(summary):
+    old_info = "Passage: I am a hardworking and self-motivated fourth-year college student at the University of California, Berkeley studying Electrical Engineering and Computer Science. I am proficient in Python, Java, and C and have seven years of programming experience through high school robotics, coursework, internships, deep learning research, and project-oriented student organizations at Berkeley. I am interested in deep learning and fintech and hope to help many people using these technologies.\n\nKeywords: Software Engineer, Researcher, Fintech Enthusiast\n--\nPassage: Senior Regents\' & Chancellor\'s Scholar at UC Berkeley studying Materials Science, EECS, and Energy Engineering. I am interested in solving materials problems in the energy space via the use of computer science. I have a proven track record in all of these functionalities, with internship experience in EE, CS, Materials Science, and Chemistry, in fields spanning aerospace, defense, automotive, and national security. Beyond the workplace, I am passionate about mentorship, teaching, and community building, having served in a wide variety of instructional, community-focused roles throughout my career.\n\nKeywords: Material Scientist, Teacher, Software Engineer\n\n--\nPassage: I am a fourth-year student studying Electrical Engineering and Computer Science + Business at UC Berkeley\'s Management, Entrepreneurship, and Technology (M.E.T.) Program. Currently, I support ISAACS (Immersive Semi-Autonomous Aerial Command System) as an undergraduate researcher at the Vive Center for Enhanced Reality and Lawrence Berkeley National Laboratory. During the semester, I also support Berkeley Engineering\'s College Relations Department as a Student Assistant. Feel free to contact me anytime at jasmine.bae@berkeley.edu.\n\nKeywords: Entrepreneur, Researcher, Software Engineer\n--\nPassage: Student at University of California, Berkeley pursuing a double major in Computer Science and Applied Mathematics. Interested in challenging opportunities in software development and mathematical applications. \n\nKeywords: Software Engineer, Mathematician\n--\nPassage: My name is Sarthak Madan and I am a senior at UC Berkeley studying Electrical Engineering and Computer Science. I have been programming for the past 7 years and am proficient in C++, Python and Java. I have enjoyed working on many personal projects in the past which can be viewed on my Github: https://github.com/sarthak171. I also enjoy sharing my passion with younger students through my own non-profit organization San Diego Code, where I teach K-12 students basic programming fundamentals. I am currently looking for a challenging software internship for Summer 2022. \n\nKeywords: Software Engineer, Volunteer, Self-motivated Programmer\n--\nPassage: My name is Aniruddha Alawani and I am a third year student at UC Berkeley studying Electrical Engineering and Computer Science. I am an avid programmer with over 9 years of experience in Java, Python, C++, Javascript, and other programming languages. I enjoy doing Computer Vision research at UC Berkeley as well as working on my own projects. Some of my work can be seen on my Github at https://github.com/Aalawani686. I am actively looking for internship opportunities for Summer 2022. If you are looking for a passionate, knowledgeable coder for your team, feel free to contact me at aalawani@berkeley.edu.\n\nKeywords: Software Engineer, Researcher, Student\n--\n\nPassage: Hey, I\'m Alicia! My nephew thinks I\'m super cool and fight dinosaurs for a living, but I\'m actually a student at UC Berkeley and am a lot better at things like full stack development + machine learning (and a little bit of infra now!). I love learning new engineering topics and am super interested in things like humane technology and finance. At school, I\'m currently the president of a machine learning club and hope to create a more vibrant and welcoming community for other students, as well as provide new educational opportunities! \n\nKeywords: Dinosaur Warrior, ML President, Full Stack Web Developer\n--\nPassage: I have two passions in life: computer science and the environment, but not in that order. In fact, I love the two equally and strongly believe that my two passions can coexist, in sync with each other, to create a better California.\n\nKeywords: Software Engineer, Environmentalist\n--\nPassage: Hi I’m a rising senior with a double major in Computer Science and Cognitive Science who loves creating, innovating, teaching and programming!\n\nKeywords: Software Engineer, Cognitive Scientist, Innovator\n--\nPassage: Senior studying electrical engineering & computer science. I\'m interested in educational accessibility and the intersections of tech & learning.\n\nKeywords: Software Engineer, Educational Tech Enthusiast\n--\nPassage: I\'m a student at UC Berkeley studying Electrical Engineering and Computer Science (EECS) with a minor in Data Science. I\'ve worked in Software Engineering intern roles at various large tech companies including Google and Nvidia. I\'m interested in SWE internship positions for 2022, so don\'t hesitate to reach out to me! \n\nKeywords: Software Engineer, Data Scientist, Student\n--\nPassage: I am currently an undergraduate student at the University of California, Berkeley studying Electrical Engineering and Computer Science (EECS).\n\nI first began learning to code in high school and immediately fell in love with the freedom to create, solve problems, and just play around with fun side projects. Since then, I have been pursuing my passion for computing as a student, employee, and hobbyist. As such, I\'m always looking for new opportunities and projects to collaborate on. If you have anything you would like to talk about, feel free to shoot me an email!\n\nKeywords: Software Enginer, Student, Hobbyist\n--\n"
+    new_summary = "Passage: " + summary + "Keywords:"
+
+    co = cohere.Client('LfisDp2gB4OBLOMdrO8rgNkBv6JBFwOzfoClNUti')
+    response = co.generate(
+    model='xlarge',
+    prompt=old_info + new_summary,
+    max_tokens=10,
+    temperature=0.5,
+    k=3,
+    p=0.4,
+    frequency_penalty=0,
+    presence_penalty=0,
+    stop_sequences=["--"],
+    return_likelihoods='NONE')
+    
+    keywords = response.generations[0].text.replace("--", "")
+    keyword_lst = keywords.split(",")
+    return keyword_lst
+
+def generate_pic(project_keywords):
+    # Text to Image API
+    host = 'https://dev.paint.cohere.ai/txt2img'
+    response = requests.post(host, json={'prompt': project_keywords, 'n_samples' : 1, 'n_iter' : 1})
+
+    # decode image
+    imageBytes = base64.b64decode(response.json()['image']) #decode
+
+    # create file object
+    f = open(project_keywords + ".png", "wb")
+    f.write(imageBytes)
+    return f
+
