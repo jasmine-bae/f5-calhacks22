@@ -10,6 +10,22 @@ const ProjectsCard = ({ data }) => {
 			<Fade bottom duration={2000} >
 				<Card className="shadow-lg--hover shadow mt-4">
 					<CardBody>
+						<img
+							src={data.companylogo}
+							style={{
+								objectFit: "cover",
+								left: 0,
+								right: 0,
+								top: "7rem",
+								marginLeft: "auto",
+								marginRight: "auto",
+								width: "8rem",
+								height: "8rem",
+								borderRadius: "50%",
+							}}
+							className="shadow mb-3"
+							alt={data.companylogo}
+						/>
 						<div className="d-flex px-3">
 							<div className="pl-4">
 								<h3>{data.name}</h3>
