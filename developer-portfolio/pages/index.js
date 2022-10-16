@@ -26,7 +26,7 @@ export default function Home({ githubProfileData }) {
 			<Education />
 			{/* <Feedbacks /> */}
 			<Projects />
-			<GithubProfileCard prof={githubProfileData} />
+			{/* <GithubProfileCard prof={githubProfileData} /> */}
 		</div>
 	);
 }
