@@ -1,10 +1,20 @@
-template/.jekyll-cache
-template/Gemfile.lock
-template/_site
-template/.sass-cache
-template/.jekyll-metadata
-template/.idea
-template/.DS_Store
-template/node_modules
-template/npm-debug.log
-template/package-lock.json
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+developer-portfolio/node_modules
+developer-portfolio/.pnp
+developer-portfolio/.pnp.js
+developer-portfolio/coverage
+developer-portfolio/.next
+developer-portfolio/out/
+developer-portfolio/build
+*.DS_Store
+*.pem
+developer-portfolio/npm-debug.log*
+developer-portfolio/yarn-debug.log*
+developer-portfolio/yarn-error.log*
+developer-portfolio/.env.local
+developer-portfolio/.env.development.local
+developer-portfolio/.env.test.local
+developer-portfolio/.env.production.local
+developer-portfolio.vercel
