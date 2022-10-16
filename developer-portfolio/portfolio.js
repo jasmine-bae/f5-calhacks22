@@ -190,41 +190,19 @@ export const skillsSection = {
 export const SkillBars = [
 	{
 		Stack: "Frontend/Design", //Insert stack or technology you have experience in
-		progressPercentage: "90", //Insert relative proficiency in percentage
+		// progressPercentage: "90", //Insert relative proficiency in percentage
 	},
 	{
 		Stack: "Backend",
-		progressPercentage: "70",
+		// progressPercentage: "70",
 	},
 	{
 		Stack: "Programming",
-		progressPercentage: "60",
+		// progressPercentage: "60",
 	},
 ];
 
 export const educationInfo = [
-	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		grade: "Grade A",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		grade: "Grade A",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
 	{
 		schoolName: "Harvard University",
 		subHeader: "Master of Science in Computer Science",
@@ -252,16 +230,16 @@ export const experience = [
 		companylogo: "/img/icons/common/dusecaSoftware.jpg",
 		date: "Jan 2022 – Mar 2022",
 		desc: "I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.",
-		// descBullets: [
-		// 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-		// 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		// ],
+		descBullets: [
+			"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		],
 	},
 	{
 		role: "Full Stack Developer",
 		company: "Bleed-AI",
 		companylogo: "/img/icons/common/bleedAI.jpg",
-		date: "Sept 2021 - Oct 2021",
+		date: "Aug 2021 - Oct 2021",
 		desc: "Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.",
 	},
 	{
