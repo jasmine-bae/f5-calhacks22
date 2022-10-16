@@ -24,7 +24,6 @@ def json_to_portfolio(in_json):
         data,
     )
     with open(filename, mode="w", encoding="utf-8") as message:
-        print('hi')
         message.write(content)
         print(f"... wrote {filename}")
 

@@ -26,17 +26,17 @@ export const SkillBars = [
 	
 {
 	Stack: "Python (Programming Language)", //Insert stack or technology you have experience in
-		progressPercentage: 90, //Insert relative proficiency in percentage
-},
-
-{
-	Stack: "PyTorch/TensorFlow", //Insert stack or technology you have experience in
 		progressPercentage: 95, //Insert relative proficiency in percentage
 },
 
 {
-	Stack: "Deep Learning", //Insert stack or technology you have experience in
+	Stack: "PyTorch/TensorFlow", //Insert stack or technology you have experience in
 		progressPercentage: 85, //Insert relative proficiency in percentage
+},
+
+{
+	Stack: "Deep Learning", //Insert stack or technology you have experience in
+		progressPercentage: 80, //Insert relative proficiency in percentage
 },
 
 ];
