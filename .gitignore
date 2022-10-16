@@ -1,0 +1,10 @@
+template/.jekyll-cache
+template/Gemfile.lock
+template/_site
+template/.sass-cache
+template/.jekyll-metadata
+template/.idea
+template/.DS_Store
+template/node_modules
+template/npm-debug.log
+template/package-lock.json
